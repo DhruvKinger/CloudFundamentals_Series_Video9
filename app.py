@@ -29,15 +29,15 @@ def home():
 
     config = {
         "environment": get_setting("APP_ENVIRONMENT", "Development"),
-        "version": get_setting("APP_VERSION", "1.1"),
+        "version": get_setting("APP_VERSION", "1"),
         "message": get_setting(
-            "APP_MESSAGE", "Application V1.1 is running successfully."
+            "APP_MESSAGE", "Application is running successfully."
         ),
     }
 
     return render_template(
         "index.html",
-        app_name="Dhruv's Dashboard",
+        app_name="CloudDeploy Dashboard",
         subtitle="From Code to Cloud",
         environment=config["environment"],
         version=config["version"],
